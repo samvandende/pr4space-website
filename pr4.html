@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PR4 Mission – PR4Space</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: white;
+      padding: 3rem 2rem 2rem;
+      border-bottom: 1px solid #ccc;
+      text-align: center;
+    }
+
+    .logo-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+
+    .logo-row img {
+      height: 120px;
+      width: auto;
+    }
+
+    h1 {
+      margin-bottom: 0.5rem;
+    }
+
+    .back-link {
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .back-link a {
+      color: #0074D9;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 4rem;
+    }
+
+    .section-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .section-row.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .section-text {
+      flex: 1 1 300px;
+    }
+
+    .section-img {
+      flex: 1 1 300px;
+    }
+
+    .section-img img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .section-text h2 {
+      color: #001f3f;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #ddd;
+      font-size: 0.9rem;
+    }
+
+    .partners {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 1.5rem;
+    }
+
+    .partners img {
+      height: 60px;
+      max-width: 120px;
+      object-fit: contain;
+    }
+
+    @media (max-width: 768px) {
+      .section-row {
+        flex-direction: column !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-row">
+      <img src="partners/logo_rxbx.jpg" alt="Rexus Bexus Logo" />
+      <img src="team_logo.png" alt="PR4Space Logo" />
+      <img src="missions/mission_logo_pr4.png" alt="PR4 Logo" />
+    </div>
+    <h1>PR4</h1>
+    <p>Payload for Radio interferometry and Radiation measurement on Rockets Revisited</p>
+  </header>
+
+  <div class="back-link">
+    <a href="index.html">&larr; Back to Homepage</a>
+  </div>
+
+  <main>
+
+    <section>
+      <div class="section-row">
+        <div class="section-text">
+          <h2>What is PR4?</h2>
+          <p>
+              Some info about PR4
+          </p>
+        </div>
+        <div class="section-img">
+          <img src="missions/mission_logo_pr4.png" alt="PR4 Logo" />
+        </div>
+      </div>
+    </section>
+
+
+  <footer>
+    &copy; 2025 PR4Space Student Team – All rights reserved.
+    <div class="partners">
+      <img src="partners/logo_rrl.jpg" alt="Radboud Radio Lab">
+      <img src="partners/logo_tue.png" alt="Technical University Eindhoven">
+      <img src="partners/logo_rxbx.jpg" alt="Rexus Bexus">
+      <img src="partners/logo_snsa.png" alt="Swedish National Space Agency">
+      <img src="partners/logo_dlr.jpeg" alt="German Aerospace Agency">
+      <img src="partners/logo_esa.svg" alt="European Space Agency">
+      <img src="partners/logo_tminus.webp" alt="T-minus Engineering">
+      <img src="partners/logo_aisler.png" alt="T-minus Engineering">
+      <img src="partners/logo_harting.png" alt="T-minus Engineering">
+      <img src="partners/logo_coilcraft.webp" alt="T-minus Engineering">
+      <!-- Add more logos as needed -->
+    </div>
+  </footer>
+</body>
+</html>
