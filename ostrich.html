@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OSTRICH Mission – PR4Space</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: white;
+      padding: 3rem 2rem 2rem;
+      border-bottom: 1px solid #ccc;
+      text-align: center;
+    }
+
+    .logo-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+
+    .logo-row img {
+      height: 120px;
+      width: auto;
+    }
+
+    h1 {
+      margin-bottom: 0.5rem;
+    }
+
+    .back-link {
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .back-link a {
+      color: #0074D9;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 4rem;
+    }
+
+    .section-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .section-row.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .section-text {
+      flex: 1 1 300px;
+    }
+
+    .section-img {
+      flex: 1 1 300px;
+    }
+
+    .section-img img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .section-text h2 {
+      color: #001f3f;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #ddd;
+      font-size: 0.9rem;
+    }
+
+    .partners {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 1.5rem;
+    }
+
+    .partners img {
+      height: 60px;
+      max-width: 120px;
+      object-fit: contain;
+    }
+
+    @media (max-width: 768px) {
+      .section-row {
+        flex-direction: column !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-row">
+      <img src="partners/logo_rxbx.jpg" alt="Rexus Bexus Logo" />
+      <img src="team_logo.png" alt="PR4Space Logo" />
+      <img src="missions/mission_logo_ostrich.png" alt="OSTRICH Logo" />
+    </div>
+    <h1>OSTRICH</h1>
+    <p>Observation System Tracking Radiation Incidence through Correlation Heuristics</p>
+  </header>
+
+  <div class="back-link">
+    <a href="index.html">&larr; Back to Homepage</a>
+  </div>
+
+  <main>
+
+    <section>
+      <div class="section-row">
+        <div class="section-text">
+          <h2>What is OSTRICH?</h2>
+          <p>
+            OSTRICH (Observation System Tracking Radiation Incidence through Correlation Heuristics) is a cosmic ray research experiment with the aim to study the arrival direction of <a href="science.html#cosmicrays">cosmic rays</a> in the arctic. The experiment is scheduled to fly aboard the BEXUS 37 high-altitude balloon as part of the <a href="https://rexusbexus.net/">REXUS/BEXUS programme</a>, supported by SNSA, DLR, and ESA.
+          </p>
+          <p>
+The primary goal of the OSTRICH mission is to validate the design of a multi-layer cosmic ray detector in the stratosphere, simulating the environment of space. This system is intended as a precursor to a future CubeSat-based detector. Its scientific purpose is to:
+
+ <ul>
+  <li>Measure the flux of cosmic rays as a function of altitude</li>
+  <li>Determine the angle of arrival of high-energy particles</li>
+  <li>Test the feasibility of generating a sky-map of cosmic ray directions</li>
+</ul> 
+
+The mission also included long-term reliability tests of the onboard electronics, data storage, calibration systems, and communication links, all within the extreme conditions of near-space.
+          </p>
+        </div>
+        <div class="section-img">
+          <img src="missions/mission_logo_ostrich.png" alt="OSTRICH Logo" />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-row reverse">
+        <div class="section-text">
+          <h2>Payload Design</h2>
+          <p>
+
+          </p>
+        </div>
+        <div class="section-img">
+          <img src="missions/ostrich/scintillator_design.png" alt="OSTRICH scintillator layer" />
+          <img src="missions/ostrich/detector_design.png" alt="OSTRICH detector design" />
+        </div>
+      </div>
+    </section>
+    
+    <section>
+      <div class="section-row">
+        <div class="section-text">
+          <h2>Current status</h2>
+          <p>
+
+          </p>
+        </div>
+        <div class="section-img">
+          <img src="missions/ostrich/rm_pcb.png" alt="OSTRICH progress" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Launch & Results -->
+    <section>
+      <div class="section-row reverse">
+        <div class="section-text">
+          <h2>Launch & Results</h2>
+          <p>
+            OSTRICH is scheduled to launch from Esrange Space Center, near the city of Kiruna in Sweden, in October 2025. It will float at an altitude of around 30 kilometers for at least an hour, gathering valuable scientific data. 
+          </p>
+        </div>
+        <div class="section-img">
+          <img src="missions/ostrich/example_bexus_launch.png" alt="BEXUS Launch" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 PR4Space Student Team – All rights reserved.
+    <div class="partners">
+      <img src="partners/logo_rrl.jpg" alt="Radboud Radio Lab">
+      <img src="partners/logo_tue.png" alt="Technical University Eindhoven">
+      <img src="partners/logo_rxbx.jpg" alt="Rexus Bexus">
+      <img src="partners/logo_snsa.png" alt="Swedish National Space Agency">
+      <img src="partners/logo_dlr.jpeg" alt="German Aerospace Agency">
+      <img src="partners/logo_esa.svg" alt="European Space Agency">
+      <img src="partners/logo_tminus.webp" alt="T-minus Engineering">
+      <img src="partners/logo_aisler.png" alt="T-minus Engineering">
+      <img src="partners/logo_harting.png" alt="T-minus Engineering">
+      <img src="partners/logo_coilcraft.webp" alt="T-minus Engineering">
+      <!-- Add more logos as needed -->
+    </div>
+  </footer>
+</body>
+</html>
