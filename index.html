@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PR4Space Student Team</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: white;
+      padding: 3rem 2rem 2rem;
+      border-bottom: 1px solid #ccc;
+      text-align: center;
+    }
+
+    .logo-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+
+    .logo-row img {
+      height: 120px;
+      width: auto;
+    }
+
+    .announcement {
+      background: orange;
+      color: #222;
+      font-weight: bold;
+      text-align: center;
+      padding: 1rem;
+      font-size: 1.1rem;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 3rem;
+      gap: 2rem;
+    }
+
+    .section-row:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .section-text {
+      flex: 1 1 300px;
+    }
+
+    .section-img {
+      flex: 1 1 300px;
+    }
+
+    .section-img img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .section-text h2, .section-text h3 {
+      color: #001f3f;
+      margin-top: 0;
+    }
+
+    .section-text a {
+      color: #0074D9;
+      text-decoration: none;
+    }
+
+    .section-text a:hover {
+      text-decoration: underline;
+    }
+
+    .subsection {
+      margin-top: 2rem;
+    }
+    
+    .section-group.row .section-row {
+      flex-direction: row;
+    }
+
+    .section-group.row-reverse .section-row {
+      flex-direction: row-reverse;
+    }
+
+    @media (max-width: 768px) {
+      .section-group .section-row {
+        flex-direction: column !important;
+      }
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #ddd;
+      font-size: 0.9rem;
+    }
+
+    .partners {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 1.5rem;
+    }
+
+    .partners img {
+      height: 60px;
+      max-width: 120px;
+      object-fit: contain;
+    }
+
+    @media (max-width: 768px) {
+      .section-row {
+        flex-direction: column !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-row">
+      <img src="team_logo.png" alt="PR4Space Logo" />
+    </div>
+    <h1>A space student team from Nijmegen and Eindhoven</h1>
+    <p>"We zijn gewoon heel goed"</p>
+  </header>
+
+  <div class="announcement">
+    🚀 27/03/2025 The <a href="ostrich.html">OSTRICH</a> mission received a PASS for Preliminary Design Review! 
+  </div>
+
+  <main>
+
+    <!-- About the Team -->
+    <div class="section-group row">
+      <div class="section-row">
+        <!-- Text and Image here (text left, image right) -->
+        <div class="section-text">
+        <h2>About the Team</h2>
+        <p>
+          PR4Space is a multidisciplinary student team from Radboud University Nijmegn and Eindhoven University of Technology. The team is hosted in the Radboud Radio Lab, and performs space related research missions into radio interferometry based object tracking and cosmic ray measurement. 
+          <a href="team.html">Meet the team &rarr;</a>
+        </p>
+      </div>
+      <div class="section-img">
+        <img src="team/team.jpg" alt="Team Photo" />
+      </div>
+      </div>
+    </div>
+
+<!-- Our Science -->
+<div class="section-text">
+  <h2>Our Science</h2>
+</div>
+<div class="section-group row-reverse">
+  <div class="section-row">
+    <!-- Radio Interferometry (text right, image left) -->
+          <div class="section-text">
+        <h3>Radio Interferometry</h3>
+        <p>
+          Info about RI
+          <a href="science.html#interferometry">Read more &rarr;</a>
+        </p>
+      </div>
+      <div class="section-img">
+        <img src="science/science_radio_interferometry.png" alt="Radio Interferometry" />
+      </div>
+  </div>
+  <div class="section-row">
+    <!-- Cosmic Rays (also text right, image left) -->
+          <div class="section-text">
+        <h3>Cosmic Ray Research</h3>
+        <p>
+          Info about cosmic rays
+          <a href="science.html#cosmicrays">Read more &rarr;</a>
+        </p>
+      </div>
+      <div class="section-img">
+        <img src="science/science_cosmic_rays.png" alt="Cosmic Ray Science" />
+      </div>
+  </div>
+</div>
+
+<!-- Current Missions -->
+<div class="section-text">
+  <h2>Current Missions</h2>
+</div>
+<div class="section-group row">
+  <div class="section-row">
+    <!-- OSTRICH (text left, image right) -->
+          <div class="section-text">
+        <h3>OSTRICH</h3>
+        <p>
+          Info about OSTRICH
+          <a href="ostrich.html">Learn more about OSTRICH &rarr;</a>
+        </p>
+      </div>
+      <div class="section-img">
+        <img src="missions/mission_logo_ostrich.png" alt="OSTRICH Mission Logo" />
+      </div>
+  </div>
+</div>
+
+<!-- Past Missions -->
+<div class="section-text">
+  <h2>Previous Missions</h2>
+</div>
+<div class="section-group row-reverse">
+  <div class="section-row">
+    <!-- ALIX -->
+          <div class="section-text">
+        <h3>ALIX</h3>
+        <p>
+          Info about ALIX
+          <a href="missions/missions.html#alix">More about ALIX &rarr;</a>
+        </p>
+      </div>
+      <div class="section-img">
+        <img src="missions/mission_logo_alix.png" alt="ALIX Logo" />
+      </div>
+  </div>
+    
+  <div class="section-row">
+    <!-- PR4 -->
+          <div class="section-text">
+        <h3>PR4</h3>
+        <p>
+          Info about PR4
+          <a href="missions/missions.html#pr4">More about PR4 &rarr;</a>
+        </p>
+      </div>
+      <div class="section-img">
+        <img src="missions/mission_logo_pr4.png" alt="PR4 Logo" />
+      </div>
+  </div>
+  
+  <div class="section-row">
+    <!-- PR3 -->
+          <div class="section-text">
+        <h3>PR3</h3>
+        <p>
+          Info about PR3
+          <a href="missions/missions.html#pr3">More about PR3 &rarr;</a>
+        </p>
+      </div>
+      <div class="section-img">
+        <img src="missions/mission_logo_pr3.png" alt="PR3 Logo" />
+      </div>
+  </div>
+</div>
+
+<!-- Outreach -->
+<div class="section-text">
+</div>
+<div class="section-group row">
+  <div class="section-row">
+    <!--Outreach -->
+          <div class="section-text">
+          <h2>Outreach</h2>
+        <p>
+          Info about outreach we have done.
+          <a href="outreach/outreach.html">Learn more about our outreach &rarr;</a>
+        </p>
+      </div>
+      <div class="section-img">
+        <img src="outreach/amadee24_public_day.jpeg" alt="Outreach example" />
+      </div>
+  </div>
+</div>
+
+  </main>
+
+  <footer>
+    &copy; 2025 PR4Space Student Team – All rights reserved.
+    <div class="partners">
+      <img src="partners/logo_rrl.jpg" alt="Radboud Radio Lab">
+      <img src="partners/logo_tue.png" alt="Technical University Eindhoven">
+      <img src="partners/logo_rxbx.jpg" alt="Rexus Bexus">
+      <img src="partners/logo_snsa.png" alt="Swedish National Space Agency">
+      <img src="partners/logo_dlr.jpeg" alt="German Aerospace Agency">
+      <img src="partners/logo_esa.svg" alt="European Space Agency">
+      <img src="partners/logo_tminus.webp" alt="T-minus Engineering">
+      <img src="partners/logo_aisler.png" alt="T-minus Engineering">
+      <img src="partners/logo_harting.png" alt="T-minus Engineering">
+      <img src="partners/logo_coilcraft.webp" alt="T-minus Engineering">
+      <!-- Add more logos as needed -->
+    </div>
+  </footer>
+
+</body>
+</html>
